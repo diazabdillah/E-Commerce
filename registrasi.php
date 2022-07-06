@@ -1,0 +1,177 @@
+<html>
+<?php  require_once('config.php'); ?>
+
+<head>
+    <title>AnekaBarangSby</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+body {
+    font-family: sans-serif;
+    background: #d5f0f3;
+}
+
+h1 {
+    text-align: center;
+    /*ketebalan font*/
+    font-weight: 300;
+}
+
+#card-content {
+    padding: 12px 44px;
+}
+
+#card-title {
+    font-family: "Raleway Thin", sans-serif;
+    letter-spacing: 4px;
+    padding-bottom: 23px;
+    padding-top: 13px;
+    text-align: center;
+}
+
+.underline-title {
+    background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+    height: 2px;
+    margin: -1.1rem auto 0 auto;
+    width: 89px;
+}
+
+.kotak_login {
+    width: 350px;
+    background: white;
+    /*meletakkan form ke tengah*/
+    margin: 80px auto;
+    padding: 30px 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    font-family: "Raleway", sans-serif;
+    font-size: 11pt;
+}
+
+#forgot-pass {
+    color: #2dbd6e;
+    font-family: "Raleway", sans-serif;
+    font-size: 10pt;
+    margin-top: 3px;
+    text-align: right;
+}
+
+.form {
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-border {
+    background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+    height: 1px;
+    width: 100%;
+}
+
+.form-content {
+    background: #fbfbfb;
+    border: none;
+    outline: none;
+    padding-top: 14px;
+}
+
+#signup {
+    color: #2dbd6e;
+    font-family: "Raleway", sans-serif;
+    font-size: 10pt;
+    margin-top: 16px;
+    text-align: center;
+}
+
+#submit-btn {
+    background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
+    border: none;
+    border-radius: 21px;
+    box-shadow: 0px 1px 8px #24c64f;
+    cursor: pointer;
+    color: white;
+    font-family: "Raleway SemiBold", sans-serif;
+    height: 42.3px;
+    margin: 0 auto;
+    margin-top: 50px;
+    transition: 0.25s;
+    width: 153px;
+
+}
+
+#submit-btn:hover {
+    box-shadow: 0px 1px 18px #24c64f;
+
+}
+</style>
+
+<body>
+
+
+
+    <div class="kotak_login">
+        <div>
+            <small><a href="login.php"><img src="images/home.png" width="25px"></a></small>
+        </div>
+        <div id="card-content">
+            <div id="card-title">
+                <h2>Registrasi</h2>
+                <div class="underline-title"></div>
+                <p>AnekaBarangSby</p>
+                <img src="images/anekabarangsbycoba.jpg" width="100px">
+            </div>
+        </div>
+
+        <form action="prosesregis.php" method="POSt">
+            <label for="user-username" style="padding-top:13px">&nbsp;Username :</label>
+            <input id="user-email" class="form-content" type="username" name="username" autocomplete="on" required />
+            <div class="form-border"></div>
+            <label for="user-email" style="padding-top:13px">&nbsp;Email :</label>
+            <input id="user-email" class="form-content" type="email" name="email" autocomplete="on" required />
+            <div class="form-border"></div>
+            <label for="user-password" style="padding-top:22px">&nbsp;Password:</label>
+            <input id="user-password" class="form-content" type="password" name="password" required />
+            <div class="form-border"></div>
+            <label for="user-password" style="padding-top:22px">&nbsp;Konfirmasi Password:</label>
+            <input id="user-password" class="form-content" type="password" name="konfirmasipassword" required />
+            <div class="form-border"></div>
+
+            <button id="submit-btn" type="submit" name="submit">Registrasi</button>
+
+
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
